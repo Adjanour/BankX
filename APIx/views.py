@@ -44,7 +44,7 @@ def accountApi(request, id=0):
         if account_serializer.is_valid():
             account_serializer.save()
             return JsonResponse("Update Successful",safe=False)
-        return JsonResponse("Failed to Update")
+        return JsonResponse("Failed to Update", safe=False)
 
     elif request.method == "DELETE":
         account = Account.objects.get(AccountId=id)
