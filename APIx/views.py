@@ -6,7 +6,6 @@ import json
 from Accounts.models import Account
 from APIx.serializers import AccountSerializer
 
-from django.core.files.storage import default_storage
 # Create your views here.
 
 
