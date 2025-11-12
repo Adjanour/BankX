@@ -3,7 +3,7 @@ from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
 import json
 
-from Accounts.models import Account, Transaction , User
+from Accounts.models import Account
 from APIx.serializers import AccountSerializer
 
 from django.core.files.storage import default_storage
