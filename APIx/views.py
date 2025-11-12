@@ -39,7 +39,7 @@ def accountApi(request, id=0):
 
     elif request.method == 'PUT':
         account_data = JSONParser().parse(request)
-        account = Account.objects.get(id = account_data['Id'])
+        account = Account.objects.get(id = account_data['id'])
         account_serializer = AccountSerializer(account, data=account_data)
         if account_serializer.is_valid():
             account_serializer.save()
